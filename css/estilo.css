@@ -1,0 +1,300 @@
+body{
+    background-image: linear-gradient(#252525);
+}
+
+.btn-top-right {
+  position: fixed;        
+  top: 15px;              
+  right: 15px;            
+  background-color: #000; 
+  color: #fff;            
+  font-size: 12px;        
+  padding: 5px 10px;      
+  border: none;           
+  border-radius: 4px;     
+  z-index: 1051;          
+}
+
+.btn-top-right:hover {
+  background-color: #333; 
+}
+
+.nav-icon {
+  height: 24px;   
+  width: auto;    
+}
+
+:root{
+  --bg:#2b2b2b;
+  --panel:#242424;
+  --dark:#1f1f1f;
+  --text:#ffffff;
+}
+body{
+  background-color:var(--bg);
+  color:var(--text);
+}
+
+.accordion{
+    margin-left: 90px;
+}
+
+.accordion .accordion-item{
+  background-color:var(--panel);
+  border:1px solid #333;
+}
+.accordion-button{
+  background-color:var(--panel);
+  color:var(--text);
+}
+.accordion-button:not(.collapsed){
+  background-color:var(--dark);
+  color:var(--text);
+}
+.accordion-button::after{
+  filter:invert(1);
+}
+.accordion-body{
+  background-color:var(--dark);
+  color:var(--text);
+}
+a,
+.nav-link,
+.btn,
+.dropdown-item{
+  color:var(--text);
+}
+
+.navbar{
+  background-color:#2b2b2b!important;
+}
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-toggler{
+  color:#ffffff!important;
+}
+.navbar .nav-link.active,
+.navbar .nav-link.show{
+  color:#ffffff!important;
+  font-weight:500;
+}
+.navbar .nav-link.disabled{
+  color:rgba(255,255,255,0.4)!important;
+}
+.navbar .dropdown-menu{
+  background-color:#242424;
+  border:1px solid #333;
+}
+.navbar .dropdown-item{
+  color:#ffffff;
+}
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus{
+  background-color:#1f1f1f;
+  color:#ffffff;
+}
+.navbar .form-control{
+  background-color:#1f1f1f;
+  border:1px solid #444;
+  color:#ffffff;
+}
+.navbar .form-control::placeholder{
+  color:rgba(255,255,255,0.5);
+}
+.navbar .btn-outline-success{
+  color:#ffffff;
+  border-color:#ffffff;
+}
+.navbar .btn-outline-success:hover{
+  background-color:#ffffff;
+  color:#2b2b2b;
+}
+.navbar-toggler{
+  border-color:#ffffff;
+}
+.navbar-toggler-icon{
+  filter:invert(1);
+}
+
+/* Container geral */
+.accordion_all {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.accordion_all .text-center {
+  font-size: 50px;
+  margin: 32px;
+  color: #ffffff;
+}
+
+/* Container do accordion + imagem */
+.accordion-container {
+  display: flex;
+  justify-content: center;   /* centraliza o bloco */
+  align-items: flex-start;   /* topo alinhado */
+  gap: 80px;                 /* aumento do espaço entre accordion e imagem */
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Accordion fixo */
+.accordion {
+  flex: 0 0 400px;          /* largura fixa do accordion */
+  max-width: 800px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;   
+  margin-right: 50px;           /* garante que não sobreponha a imagem */
+}
+
+/* Imagem não proporcional, ocupa largura maior */
+.accordion-image {
+  flex: 1;
+  width: 1000px;             /* largura fixa desejada */
+  height: 800px;            /* altura fixa que você quiser */
+margin-right: 70px;
+         /* preenche o box, podendo cortar ou distorcer */
+}
+
+/* Mobile: empilha verticalmente */
+@media (max-width: 900px) {
+  .accordion-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .accordion,
+  .accordion-image {
+    width: 90%;
+    max-width: none;
+    height: auto;           /* mantém responsividade no mobile */
+  }
+}
+
+
+
+.eu{
+  justify-content: center;
+  background-color: #333;
+}
+
+.eu-text h1,
+.eu-text h3 {
+  text-align: center;      /* centraliza título e subtítulo */
+  margin: 10px 0;
+}
+
+.eu-text-paragraphs {
+  display: flex;           /* apenas os <p> ficam lado a lado */
+  gap: 30px;               /* espaço entre os parágrafos */
+  flex-wrap: wrap;         /* quebra linha em telas menores */
+  justify-content: flex-start; /* alinha à esquerda */
+  margin-left: 90px;            /* margem geral ao redor do container */
+  margin-right: 90px;
+  margin-top: 40px;
+  margin-bottom:50px;
+}
+
+.eu-text-paragraphs p {
+  flex: 1;                 /* cada parágrafo ocupa espaço igual */
+  min-width: 200px;        /* largura mínima */
+  text-align: left;        /* texto alinhado à esquerda */
+  background-color: #333;  /* fundo escuro opcional */
+  color: #fff;             /* texto branco */
+  padding: 15px;           /* espaçamento interno */
+  border-radius: 5px;      /* cantos arredondados */
+}
+
+
+
+
+
+
+
+
+
+
+/* Cards escuros */
+.card-dark {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 1px solid #444;
+  min-height: 420px; 
+}
+
+.card-dark .card-title,
+.card-dark .card-text {
+  color: #ffffff;
+}
+
+.card-dark .btn-primary {
+  background-color: #1f1f1f; 
+  border: none;
+  color: #ffffff;
+}
+
+.card-dark .btn-primary:hover {
+  background-color: #161616; 
+}
+.cards-container {
+  display: flex;
+  justify-content: left; /* centraliza todos os cards na página */
+  gap: 20px;               /* espaçamento de 20px entre os cards */
+  flex-wrap: wrap;         /* permite quebrar linha se necessário */
+  margin: 20px 0;
+  margin-left: 40px;
+}
+
+.cards-container-vertical {
+  display: flex;
+  flex-direction: column;   /* empilha os cards verticalmente */
+  align-items: flex-start;   /* alinhados à esquerda */
+  gap: 20px;                /* espaço entre os cards */
+  margin: 20px 0;
+}
+
+.card-horizontal {
+  display: flex;
+  width: 1117px;             /* largura dos cards */
+  height: 300px;            /* altura fixa */
+  background-color: #333;    /* fundo escuro */
+  color: #fff;               /* texto branco */
+  border-radius: 5px;        /* bordas arredondadas pequenas */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  margin-left: 50px;         /* distância da borda esquerda */
+}
+
+.card-horizontal .card-img {
+  width: 50%;               /* metade do card para a imagem */
+  object-fit: cover;
+}
+
+.card-horizontal .card-content {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centraliza verticalmente */
+  text-align: left;
+}
+
+.card-horizontal h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.card-horizontal p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+
+
+/* Accordion estilos opcionais */

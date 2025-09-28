@@ -8,10 +8,8 @@ body{
   right: 15px;            
   background-color: #000; 
   color: #fff;            
-  font-size: 12px;        
-  padding: 5px 10px;      
-  border: none;           
-  border-radius: 4px;     
+  font-size: 12px;            
+  border: none;                
   z-index: 1051;          
 }
 
@@ -68,7 +66,7 @@ a,
 }
 
 .navbar{
-  background-color:#2b2b2b!important;
+  background-color:#0f001a!important;
 }
 .navbar .navbar-brand,
 .navbar .nav-link,
@@ -320,4 +318,8 @@ a,
   mix-blend-mode: screen;
   will-change: transform;
   transition: opacity 0.2s ease;
+}
+
+.carousel {
+  margin-top: 0 !important;
 }

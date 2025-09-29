@@ -25,6 +25,8 @@
   </head>
   <body>
 
+  <script src="script.js"></script>
+
     <div class="cursor-light" aria-hidden="true"></div>
 
     <header>
@@ -56,6 +58,12 @@
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <!-- seus links aqui -->
+                </ul>
+                
+                <!-- Botão de alternância de tema -->
+                <button id="toggleTheme" class="btn btn-outline-light ms-auto">Modo Claro</button>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -245,6 +253,25 @@
 
       requestAnimationFrame(animate);
     </script>
+<script>
+  const toggleBtn = document.getElementById("toggleTheme");
+  const body = document.body;
+
+  // Verifica o tema salvo anteriormente
+  const savedTheme = localStorage.getItem("site-theme");
+  if (savedTheme === "light") {
+    body.classList.add("modo-claro");
+    toggleBtn.textContent = "Modo Escuro";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("modo-claro");
+    const isLight = body.classList.contains("modo-claro");
+
+    toggleBtn.textContent = isLight ? "Modo Escuro" : "Modo Claro";
+    localStorage.setItem("site-theme", isLight ? "light" : "dark");
+  });
+</script>
 
   </body>
 </html>

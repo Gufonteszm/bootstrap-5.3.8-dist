@@ -342,3 +342,104 @@ margin-bottom: 40px;
 .carousel {
   margin-top: 0 !important;
 }
+
+body.modo-claro {
+  background: #ffffff   !important;
+  color: #300050 !important;
+}
+
+body.modo-claro a,
+body.modo-claro .nav-link,
+body.modo-claro .btn,
+body.modo-claro .dropdown-item,
+body.modo-claro .card-title,
+body.modo-claro .card-text,
+body.modo-claro h1,
+body.modo-claro h3,
+body.modo-claro p {
+  color: #300050 !important;
+}
+
+body.modo-claro .navbar {
+  background-color: #ffffff !important;
+}
+
+body.modo-claro .navbar .nav-link,
+body.modo-claro .navbar-brand {
+  color: #2B0047 !important;
+}
+
+body.modo-claro .accordion-button,
+body.modo-claro .accordion-body,
+body.modo-claro .accordion .accordion-item {
+  background-color: #f3f3f3 !important;
+  color: #300050 !important;
+  border: 1px solid #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+body.modo-claro .card-dark {
+  background-color: #ffffff !important;
+  color: #2B0047 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  border: none;
+}
+
+body.modo-claro .btn-primary {
+  background-color: #300050 !important;
+  color: #fff !important;
+  border: none;
+}
+
+body.modo-claro .btn-primary:hover {
+  background-color: #4a007a !important;
+}
+
+body.modo-claro .card-horizontal {
+  background-color: #ffffff !important;
+  color: #300050 !important;
+
+}
+
+
+
+body.modo-claro .eu, .cards2 {
+  position: relative;
+  z-index: 2;
+}
+
+body.modo-claro .eu{
+  margin-top: 100px;
+    
+}
+
+body.modo-claro .eu-text h1{
+  font-size: 50px;
+}
+
+body.modo-claro .eu-text h3{
+  font-size: 35px;
+}
+
+body.modo-claro .eu-text h1, .eu-text h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+body.modo-claro .eu-text-paragraphs {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px 90px 50px 90px;
+}
+
+body.modo-claro .eu-text-paragraphs p {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #eeeded;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
